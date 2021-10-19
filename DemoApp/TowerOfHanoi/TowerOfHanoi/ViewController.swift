@@ -10,6 +10,8 @@ class TowerOfHanoiViewController : UIViewController {
     
     var viewModel: TowerOfHanoiViewModelContractor = TowerOfHanoiViewModel()
     
+    private let defaultDiskCount = 3
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindViewModel()
@@ -30,7 +32,7 @@ class TowerOfHanoiViewController : UIViewController {
     }
     
     @IBAction func startPuzzle() {
-        let numberOfDisks = Int(disksCountInputField.text ?? "") ?? 3
+        let numberOfDisks = Int(disksCountInputField.text ?? "") ?? defaultDiskCount
         viewModel.solvePuzzleWith(numberOfDisks: numberOfDisks)
     }
     
@@ -38,7 +40,8 @@ class TowerOfHanoiViewController : UIViewController {
         stack.removeAllArrangedSubviews()
         for item in items {
             let diskView: DiskView = .fromNib()
-            diskView.frame = CGRect.init(origin: .zero, size: CGSize(width: stack.frame.width, height: 20.0))
+            let height = CGFloat(DiskView.defaultHeight)
+            diskView.frame = CGRect.init(origin: .zero, size: CGSize(width: stack.frame.width, height: height))
             diskView.translatesAutoresizingMaskIntoConstraints = true
             diskView.configureWith(disk: item)
             stack.addArrangedSubview(diskView)
