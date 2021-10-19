@@ -1,25 +1,3 @@
-//: A UIKit based Playground for presenting user interface
-  
-import UIKit
-import PlaygroundSupport
-
-class MyViewController : UIViewController {
-    override func loadView() {
-        let view = UIView()
-        view.backgroundColor = .white
-
-        let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
-        label.text = "Hello World!"
-        label.textColor = .black
-        
-        view.addSubview(label)
-        self.view = view
-    }
-}
-// Present the view controller in the Live View window
-PlaygroundPage.current.liveView = MyViewController()
-
 // Algo
 func towerOfHanoi(numberOfDisks: Int) -> Int {
     if (numberOfDisks == 1) {
@@ -120,21 +98,18 @@ class TowerOfHanoi {
         //      - Record movement C to A, movements: [A to B, A to C, B to C, A to B, C to A]
         //      - Record movement C to B, movements: [A to B, A to C, B to C, A to B, C to A, C to B]
         //      - #OfDisks = 1, from: C, to: A, int: B, movements: [A to B, A to C, B to C, A to B, C to B]
-        // 2. #OfDisks = 2, from: A, to: B, int: C, movements: []
-        //print("**** first n-1 circulation **** numberOfDisks: \(numberOfDisks) ****")
-        //print("from: \(fromRod.name), to: \(toRod.name), int: \(intrmediateRod.name), numberOfDisks: \(numberOfDisks)")
+        
+        // Recursively move n-1 disks from source rod to intermediate rod.
         movements += move(numberOfDisks: numberOfDisks - 1, from: fromRod, to: intrmediateRod, intermediate: toRod)
         
-        // Record the movement and move the disks.
+        // Move the last disk from source rod to target rod
         let diskToMove = fromRod.disks.first!
         fromRod.disks.removeFirst()
         toRod.disks.insert(diskToMove, at: 0)
         movements.append(Movement(fromRod: fromRod, toRod: toRod, disk: diskToMove))
         
-        //print("**** second n-1 circulation **** numberOfDisks: \(numberOfDisks) ****")
+        // Move the n-1 disks from intermediate rod to target rod.
         movements += move(numberOfDisks: numberOfDisks - 1, from: intrmediateRod, to: toRod, intermediate: fromRod)
-//        print ("####################")
-//        print("from: \(fromRod.name), to: \(toRod.name), int: \(intrmediateRod.name), numberOfDisks: \(numberOfDisks)")
         return movements
     }
 }
@@ -144,3 +119,24 @@ towerOfHonai.solve()
 
 
 
+//: A UIKit based Playground for presenting user interface
+  
+import UIKit
+import PlaygroundSupport
+
+class MyViewController : UIViewController {
+    override func loadView() {
+        let view = UIView()
+        view.backgroundColor = .white
+
+        let label = UILabel()
+        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
+        label.text = "Hello World!"
+        label.textColor = .black
+        
+        view.addSubview(label)
+        self.view = view
+    }
+}
+// Present the view controller in the Live View window
+PlaygroundPage.current.liveView = MyViewController()
