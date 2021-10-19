@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DiskView" customModule="TowerOfHanoi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-Bf-cEN">
+                    <rect key="frame" x="12" y="12" width="390" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="5ps-mI-G2t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.91980725526809692" green="0.4652564549389861" blue="0.47787820433903244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="wbj-Bf-cEN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="Sxe-k5-GXH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wbj-Bf-cEN" secondAttribute="trailing" constant="12" id="c1a-cq-ZmA"/>
+                <constraint firstItem="wbj-Bf-cEN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="rqR-QK-BHs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wbj-Bf-cEN" secondAttribute="bottom" constant="12" id="tBq-ef-A0g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="wbj-Bf-cEN" id="sSZ-Av-leQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-203.57142857142856"/>
+        </view>
+    </objects>
+</document>
