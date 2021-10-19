@@ -102,7 +102,7 @@ class TowerOfHanoi {
         // Recursively move n-1 disks from source rod to intermediate rod.
         movements += move(numberOfDisks: numberOfDisks - 1, from: fromRod, to: intrmediateRod, intermediate: toRod)
         
-        // Move the last disk from source rod to target rod
+        // Move the 'nth' disk (which is on top now) from source rod to target rod.
         let diskToMove = fromRod.disks.first!
         fromRod.disks.removeFirst()
         toRod.disks.insert(diskToMove, at: 0)
