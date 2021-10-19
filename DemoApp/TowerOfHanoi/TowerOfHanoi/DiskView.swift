@@ -8,6 +8,8 @@
 import UIKit
 
 class DiskView: UIView {
+    
+    static var defaultHeight = 20.0
 
     @IBOutlet weak var titleLabel: UILabel!
     
