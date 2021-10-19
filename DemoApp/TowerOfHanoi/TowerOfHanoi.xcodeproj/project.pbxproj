@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C4ED323271DFFB3000F02C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ED322271DFFB3000F02C0 /* AppDelegate.swift */; };
+		8C4ED325271DFFB3000F02C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ED324271DFFB3000F02C0 /* SceneDelegate.swift */; };
+		8C4ED327271DFFB3000F02C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4ED326271DFFB3000F02C0 /* ViewController.swift */; };
+		8C4ED32A271DFFB3000F02C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4ED328271DFFB3000F02C0 /* Main.storyboard */; };
+		8C4ED32C271DFFB4000F02C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4ED32B271DFFB4000F02C0 /* Assets.xcassets */; };
+		8C4ED32F271DFFB4000F02C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4ED32D271DFFB4000F02C0 /* LaunchScreen.storyboard */; };
+		8C9DB9A8271ED2E1004DA601 /* TowerOfHanoiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DB9A7271ED2E1004DA601 /* TowerOfHanoiViewModel.swift */; };
+		8C9DB9AA271EDC8D004DA601 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DB9A9271EDC8D004DA601 /* UIStackView+Extension.swift */; };
+		8C9DB9AC271EE113004DA601 /* DiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DB9AB271EE113004DA601 /* DiskView.swift */; };
+		8C9DB9AE271EE11D004DA601 /* DiskView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9DB9AD271EE11D004DA601 /* DiskView.xib */; };
+		8C9DB9B0271EE2FC004DA601 /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9DB9AF271EE2FC004DA601 /* UIView+Nib.swift */; };
+		8CCE8374271ECDEF00A4DACF /* TowerOfHanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCE8373271ECDEF00A4DACF /* TowerOfHanoi.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C4ED31F271DFFB3000F02C0 /* TowerOfHanoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TowerOfHanoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4ED322271DFFB3000F02C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C4ED324271DFFB3000F02C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C4ED326271DFFB3000F02C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C4ED329271DFFB3000F02C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C4ED32B271DFFB4000F02C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C4ED32E271DFFB4000F02C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C4ED330271DFFB4000F02C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9DB9A7271ED2E1004DA601 /* TowerOfHanoiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerOfHanoiViewModel.swift; sourceTree = "<group>"; };
+		8C9DB9A9271EDC8D004DA601 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		8C9DB9AB271EE113004DA601 /* DiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskView.swift; sourceTree = "<group>"; };
+		8C9DB9AD271EE11D004DA601 /* DiskView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiskView.xib; sourceTree = "<group>"; };
+		8C9DB9AF271EE2FC004DA601 /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		8CCE8373271ECDEF00A4DACF /* TowerOfHanoi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowerOfHanoi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C4ED31C271DFFB3000F02C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C4ED316271DFFB3000F02C0 = {
+			isa = PBXGroup;
+			children = (
+				8C4ED321271DFFB3000F02C0 /* TowerOfHanoi */,
+				8C4ED320271DFFB3000F02C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C4ED320271DFFB3000F02C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C4ED31F271DFFB3000F02C0 /* TowerOfHanoi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C4ED321271DFFB3000F02C0 /* TowerOfHanoi */ = {
+			isa = PBXGroup;
+			children = (
+				8C4ED322271DFFB3000F02C0 /* AppDelegate.swift */,
+				8C4ED324271DFFB3000F02C0 /* SceneDelegate.swift */,
+				8C4ED326271DFFB3000F02C0 /* ViewController.swift */,
+				8C9DB9A7271ED2E1004DA601 /* TowerOfHanoiViewModel.swift */,
+				8C4ED328271DFFB3000F02C0 /* Main.storyboard */,
+				8C4ED32B271DFFB4000F02C0 /* Assets.xcassets */,
+				8C4ED32D271DFFB4000F02C0 /* LaunchScreen.storyboard */,
+				8C4ED330271DFFB4000F02C0 /* Info.plist */,
+				8CCE8373271ECDEF00A4DACF /* TowerOfHanoi.swift */,
+				8C9DB9A9271EDC8D004DA601 /* UIStackView+Extension.swift */,
+				8C9DB9AB271EE113004DA601 /* DiskView.swift */,
+				8C9DB9AD271EE11D004DA601 /* DiskView.xib */,
+				8C9DB9AF271EE2FC004DA601 /* UIView+Nib.swift */,
+			);
+			path = TowerOfHanoi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C4ED31E271DFFB3000F02C0 /* TowerOfHanoi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C4ED333271DFFB4000F02C0 /* Build configuration list for PBXNativeTarget "TowerOfHanoi" */;
+			buildPhases = (
+				8C4ED31B271DFFB3000F02C0 /* Sources */,
+				8C4ED31C271DFFB3000F02C0 /* Frameworks */,
+				8C4ED31D271DFFB3000F02C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TowerOfHanoi;
+			productName = TowerOfHanoi;
+			productReference = 8C4ED31F271DFFB3000F02C0 /* TowerOfHanoi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C4ED317271DFFB3000F02C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					8C4ED31E271DFFB3000F02C0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C4ED31A271DFFB3000F02C0 /* Build configuration list for PBXProject "TowerOfHanoi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C4ED316271DFFB3000F02C0;
+			productRefGroup = 8C4ED320271DFFB3000F02C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C4ED31E271DFFB3000F02C0 /* TowerOfHanoi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C4ED31D271DFFB3000F02C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4ED32F271DFFB4000F02C0 /* LaunchScreen.storyboard in Resources */,
+				8C4ED32C271DFFB4000F02C0 /* Assets.xcassets in Resources */,
+				8C4ED32A271DFFB3000F02C0 /* Main.storyboard in Resources */,
+				8C9DB9AE271EE11D004DA601 /* DiskView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C4ED31B271DFFB3000F02C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9DB9B0271EE2FC004DA601 /* UIView+Nib.swift in Sources */,
+				8C9DB9AC271EE113004DA601 /* DiskView.swift in Sources */,
+				8C4ED327271DFFB3000F02C0 /* ViewController.swift in Sources */,
+				8C4ED323271DFFB3000F02C0 /* AppDelegate.swift in Sources */,
+				8CCE8374271ECDEF00A4DACF /* TowerOfHanoi.swift in Sources */,
+				8C9DB9A8271ED2E1004DA601 /* TowerOfHanoiViewModel.swift in Sources */,
+				8C4ED325271DFFB3000F02C0 /* SceneDelegate.swift in Sources */,
+				8C9DB9AA271EDC8D004DA601 /* UIStackView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8C4ED328271DFFB3000F02C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C4ED329271DFFB3000F02C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C4ED32D271DFFB4000F02C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C4ED32E271DFFB4000F02C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C4ED331271DFFB4000F02C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C4ED332271DFFB4000F02C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C4ED334271DFFB4000F02C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5CKG6MZJ3;
+				INFOPLIST_FILE = TowerOfHanoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mustafa.TowerOfHanoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C4ED335271DFFB4000F02C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y5CKG6MZJ3;
+				INFOPLIST_FILE = TowerOfHanoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mustafa.TowerOfHanoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C4ED31A271DFFB3000F02C0 /* Build configuration list for PBXProject "TowerOfHanoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4ED331271DFFB4000F02C0 /* Debug */,
+				8C4ED332271DFFB4000F02C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C4ED333271DFFB4000F02C0 /* Build configuration list for PBXNativeTarget "TowerOfHanoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4ED334271DFFB4000F02C0 /* Debug */,
+				8C4ED335271DFFB4000F02C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C4ED317271DFFB3000F02C0 /* Project object */;
+}
